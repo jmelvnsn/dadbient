@@ -64,22 +64,26 @@ nav {
 }
 
 .inner-column {
-	display: flex;
 	align-items: center;
+	display: flex;
 	flex-direction: column;
+	height: 100%;
 	justify-content: center;
 	min-height: 40%;
-	height: 100%;
 	width: 100%;
 }
 
 .shape {
-	background: green;
-	display: flex;
 	align-items: center;
+	bottom: 0;
+	display: flex;
 	justify-content: center;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
 	width: 100%;
-	height: calc(100vh - 50px);
+	z-index: -1; 
 	.square {
 		animation-duration: 3s;
 		animation-name: rotate;
@@ -105,15 +109,5 @@ nav {
 	}
 	to {
 		transform: rotate(360deg);
-	}
-}
-
-@media (min-width: 768px) {
-	.main {
-		flex-direction: row;
-	}
-	.inner-column,
-	.shape {
-		width: 50%
 	}
 }
