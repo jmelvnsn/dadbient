@@ -36,7 +36,7 @@ nav {
 	left: 0;
 	padding: 0;
 	position: fixed;
-	top: 0;
+	top: 10px;
 	width: 100%;
 	a {
 		color: black;
@@ -47,6 +47,13 @@ nav {
 
 .lt {
 	text-decoration: line-through;
+}
+
+.title {
+	background: blue;
+	color: white;
+	display: block;
+	padding: 5px;
 }
 
 .main {
