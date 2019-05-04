@@ -1,0 +1,119 @@
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0; 
+}
+
+ol, ul {
+	list-style: none;
+	li {
+		margin: 10px 0;
+	}
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-size-adjust: none;
+	-webkit-font-smoothing: antialiased;
+	background: #eee;
+	border: 25px solid blue;
+	font-family: 'MS Gothic', monospace;
+	text-transform: uppercase;
+}
+
+nav {
+	align-items: center;
+	display: flex;
+	height: 25px;
+	justify-content: center;
+	left: 0;
+	padding: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	a {
+		color: white;
+		margin: 0 20px;
+		padding: 0 20px;
+	}
+}
+
+.lt {
+	text-decoration: line-through;
+}
+
+.active {
+	color: #eee;
+}
+
+.main {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	height: calc(100vh - 50px);
+	justify-content: center;
+	width: 100%;
+}
+
+.inner-column {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 40%;
+	height: 100%;
+	width: 100%;
+}
+
+.shape {
+	background: green;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: calc(100vh - 50px);
+	.square {
+		animation-duration: 3s;
+		animation-name: rotate;
+		border: 20px solid white;
+		height: 300px;
+		text-align: center;
+		width: 300px;
+		&.white {
+			border: 20px solid white;
+		}
+		&.red{
+			border: 20px solid red;
+		}
+		&.yellow{
+			border: 20px solid yellow;
+		}
+	}
+}
+
+@keyframes rotate {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@media (min-width: 768px) {
+	.main {
+		flex-direction: row;
+	}
+	.inner-column,
+	.shape {
+		width: 50%
+	}
+}
