@@ -24,7 +24,6 @@ body {
 	-webkit-font-size-adjust: none;
 	-webkit-font-smoothing: antialiased;
 	background: #eee;
-	border: 25px solid blue;
 	font-family: 'MS Gothic', monospace;
 	text-transform: uppercase;
 }
@@ -40,7 +39,7 @@ nav {
 	top: 0;
 	width: 100%;
 	a {
-		color: white;
+		color: black;
 		margin: 0 20px;
 		padding: 0 20px;
 	}
@@ -50,15 +49,11 @@ nav {
 	text-decoration: line-through;
 }
 
-.active {
-	color: #eee;
-}
-
 .main {
 	align-items: center;
 	display: flex;
 	flex-direction: column;
-	height: calc(100vh - 50px);
+	height: 100vh;
 	justify-content: center;
 	width: 100%;
 }
