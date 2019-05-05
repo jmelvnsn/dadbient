@@ -81,7 +81,7 @@ nav {
 
 .shows {
 	background: yellow;
-	padding: 5px;
+	padding: 5px 0;
 }
 
 .shape {
@@ -108,7 +108,7 @@ nav {
 		&.red{
 			border: 20px solid red;
 		}
-		&.yellow{
+		&.yellow {
 			border: 20px solid yellow;
 		}
 	}
